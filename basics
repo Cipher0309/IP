@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Profile Page</title>
+</head>
+<body>
+<div class="container">
+<div class="image">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5OUPo88J-aMOLKqxyVGOv8SvXUyII6XfKHQ&usqp=CAU" alt="avatar" height="200" width="200" border=2px background-color="white">
+</div>
+</div>
+<h1>Yash Pulsay 😎</h1>
+<p> E-mail : y.pulsay@somaiya.edu</p>
+<p> Mobile number : 7400108065</p>
+<h1>Personal details</details></h1>
+<p> </p>
+<h2>Education details:</h2>
+<table>
+<tr>
+<td></td>
+<td>Institution</td>
+<td>Marks</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Children's Academy</td>
+<td>95.4%</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Pace Junior College</td>
+<td>92.67%</td>
+</tr>
+<tr>
+<td>3</td>
+<td>K.J.Somaiya Institute of Technology</td>
+<td>ongoing</td>
+</tr>
+</table>
+<h2>Hobbies</h2>
+<ul>
+<li>Arts and craft</li>
+<li>Badminton</li>
+<li>Roller skates</li>
+</ul>
+<h2>Skills</h2>
+<ul>
+<li>C Programming</li>
+<li>Java</li>
+<li>Python</li>
+<li>Html and css</li>
+<li>Database management using SQL</li>
+<li>Data science using AI/ML</li>
+</ul>
+<form>
+           <fieldset>
+               <legend>Personal Details</legend>
+               <p>
+                   <label>
+                       Salutation
+                       <br />
+                       <select name="salutation">
+                           <option>--None--</option>
+                           <option>Mr.</option>
+                           <option>Ms.</option>
+                           <option>Mrs.</option>
+                       </select>
+                   </label>
+               </p>
+               <p>
+                   <label>First name: <input name="firstName" /></label>
+               </p>
+   
+               <p>
+                   <label>Last name: <input name="lastName" /></label>
+               </p>
+   
+               <p>
+                   Gender :
+                   <label><input type="radio" name="gender"
+                                 value="male" />
+                         Male  
+                     </label>
+                   <label><input type="radio" name="gender"
+                                 value="female" />
+                         Female  
+                     </label>
+                   <label><input type="radio" name="gender"
+                                 value="Rather not say" />
+                         Rather not say 
+                     </label>
+               </p>
+           </fieldset>
+       </form>
+       <hr>
+       <form>
+           <fieldset>
+               <legend>Subject Details</legend>
+               <p>
+                   <label>
+                       No. of Subjects
+                       <br />
+                       <select name="subjects">
+                           <option>--None--</option>
+                           <option>4</option>
+                           <option>5</option>
+                       </select>
+                   </label>
+               </p>
+               <p>
+                   <label>Subject 1: <input name="sub1" /></label>
+               </p>
+               <p>
+                   <label>Subject 2: <input name="sub2" /></label>
+               </p>
+               <p>
+                   <label>Subject 3: <input name="sub3" /></label>
+               </p>
+               <p>
+                   <label>Subject 4: <input name="sub4" /></label>
+               </p>
+               <p>
+                   <label>Subject 5: <input name="sub5" /></label>
+               </p>
+               <p>
+                   <label>
+                       Your thoughts:
+                       <br />
+                       <textarea name="address" cols="30"
+                                 rows="3">
+                         </textarea>
+                   </label>
+               </p>
+</body>
+</html>
