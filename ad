@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advertisement</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            text-decoration: underline;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        a:link {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        #advertisement::before {
+            content: "Advertisement";
+            font-weight: bold;
+            background-color: #ff9900;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+        p::first-line {
+            font-weight: bold;
+        }
+        p.highlighted {
+            background-color: #ffffcc;
+            padding: 10px;
+            border: 2px solid #ff9900;
+        }
+    </style>
+</head>
+<body>
+    <h1>Special Offer</h1>
+    <p id="advertisement">This is an <a href="#">exciting offer</a> for our customers. Hurry up and don't miss out on our amazing products and services. <a href="#">Learn more</a></p>
+    <p class="highlighted">Limited time offer - Get 20% off on all products. Don't miss this opportunity! <a href="#">Shop now</a></p>
+</body>
+</html>
