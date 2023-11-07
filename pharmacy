@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Pharmacy Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        #medications {
+            border: 1px solid #ccc;
+            padding: 10px;
+            background-color: #fff;
+        }
+        input[type="text"], input[type="number"], input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+        .medication-item {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 5px 0;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pharmacy Management System</h1>
+    </header>
+    <div class="container">
+        <h2>Medications</h2>
+        <div id="medications">
+            <!-- Medications will be displayed here -->
+        </div>
+        <h2>Add Medication</h2>
+        <form id="medication-form">
+            <input type="text" id="medication-name" placeholder="Medication Name" required>
+            <input type="number" id="medication-quantity" placeholder="Quantity" required>
+            <input type="submit" value="Add Medication">
+        </form>
+    </div>
+
+    <script>
+        const medicationForm = document.getElementById("medication-form");
+        const medicationsList = document.getElementById("medications");
+
+        medicationForm.addEventListener("submit", function(event) {
+            event.preventDefault();
+            const medicationName = document.getElementById("medication-name").value;
+            const medicationQuantity = document.getElementById("medication-quantity").value;
+
+            if (medicationName && medicationQuantity) {
+                const medicationItem = document.createElement("div");
+                medicationItem.className = "medication-item";
+                medicationItem.innerHTML = `<strong>${medicationName}</strong> - Quantity: ${medicationQuantity}`;
+
+                medicationsList.appendChild(medicationItem);
+
+                document.getElementById("medication-name").value = "";
+                document.getElementById("medication-quantity").value = "";
+            }
+        });
+    </script>
+</body>
+</html>
